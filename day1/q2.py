@@ -14,18 +14,18 @@ while 1:
     if bool(line.replace('\n','')):
         count+=int(line.replace('\n',''))
     else:
-        if count>top1:
+        if count>=top1:
             top3=top2
             top2=top1
             top1=count
             count=0
             continue
-        if count>top2:
+        if count>=top2:
             top3=top2
             top2=count
             count=0
             continue
-        if count>top3:
+        if count>=top3:
             top3=count
             count=0
             continue
