@@ -7,6 +7,9 @@ file = open(os.path.join(__location__,'input.txt'), 'r',encoding="utf-8")
 
 # the input is complecated and I plan to initialize the values manually
 # for q2 this is not the best simulation and solution, but cost me least of time changing my code.
+# the most inportant thing for q2 is to realise: It's impossible to track the worry value of each item for 10k rounds.
+# so I just use the remainders of worry value to replace the original worry value. 
+# And when remainer goes through a +-*/ **, it will keep the same remainder as the original worry value did.
 opt={'+':operator.add,'-':operator.sub,'*':operator.mul,'/':operator.truediv,'**':operator.pow}
 
 monkey_items =[
